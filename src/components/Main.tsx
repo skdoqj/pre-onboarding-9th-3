@@ -52,17 +52,17 @@ function Main() {
       <StyledHead>
         <span>지역 선택</span>
         {region.map(item => (
-          <label key={item}>
-            <input
-              type='radio'
-              name='region'
-              onChange={OnChange}
-              value={item}
-              checked={id === item ? true : false}
-            />
-
-            <span>{item}</span>
-          </label>
+          <button key={item}>{item}</button>
+          // <label key={item}>
+          //   <input
+          //     type='radio'
+          //     name='region'
+          //     onChange={OnChange}
+          //     value={item}
+          //     checked={id === item ? true : false}
+          //   />
+          //   <span>{item}</span>
+          // </label>
         ))}
         <button onClick={() => setSearchParams()}>해제</button>
       </StyledHead>
